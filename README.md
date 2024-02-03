@@ -1,2 +1,2 @@
 # footbeat py
-IC Hack '24 Project (Python backend)
+IC Hack '24 Project (Python backend - Flask)
