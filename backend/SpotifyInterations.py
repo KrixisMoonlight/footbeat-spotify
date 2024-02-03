@@ -3,13 +3,13 @@ from spotipy.oauth2 import SpotifyOAuth
 
 
 speedURIDict = {
-    5: "37i9dQZF1EIVvFvv7tCfYv?si=1ab0487c01ef4d25",
-    5.45: "37i9dQZF1EIgOKtiospcqN?si=b14f930bc7834b5e",
-    6: "37i9dQZF1EIgrZKdA44WQK?si=b1d00ea9de2741f5",
-    6.67: "37i9dQZF1EIdYV92VKrjuC?si=9bd90093931b47b6",
-    7.5: "37i9dQZF1EIgfIackHptHl?si=6c896e3b21f842b8",
-    8.57: "37i9dQZF1EIerWUrjG2OiJ?si=803596b2dbd4471c",
-    10: "37i9dQZF1EIcID9rq1OAoH?si=a98b84e4b2e44000"
+    5: "spotify:playlist:37i9dQZF1EIVvFvv7tCfYv?si=1ab0487c01ef4d25",
+    5.45: "spotify:playlist:37i9dQZF1EIgOKtiospcqN?si=b14f930bc7834b5e",
+    6: "spotify:playlist:37i9dQZF1EIgrZKdA44WQK?si=b1d00ea9de2741f5",
+    6.67: "spotify:playlist:37i9dQZF1EIdYV92VKrjuC?si=9bd90093931b47b6",
+    7.5: "spotify:playlist:37i9dQZF1EIgfIackHptHl?si=6c896e3b21f842b8",
+    8.57: "spotify:playlist:37i9dQZF1EIerWUrjG2OiJ?si=803596b2dbd4471c",
+    10: "spotify:playlist:37i9dQZF1EIcID9rq1OAoH?si=a98b84e4b2e44000"
 }
 
 SPOTIPY_CLIENT_ID = "410611533e5444388d9aa46ddcb4e72e"
@@ -43,7 +43,7 @@ def playPlaylist(speed):
         sp.start_playback(context_uri=playlist_uri)
     except:
         return "nodevice"
-    else: 
+    else:
         sp.start_playback(context_uri=playlist_uri)
 
     return True
